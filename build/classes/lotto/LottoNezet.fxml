@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lotto.LottoNezetController">
+    <children>
+      <Pane id="basePane" fx:id="basePane" prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6e6f5" height="300.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+                  
+                  <Text layoutX="150.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Írj be 5 számot:">
+               <font>
+                  <Font size="17.0" />
+               </font></Text>
+              <Button id="sorsolas_btn" fx:id="sorsolas_btn" layoutX="162.0" layoutY="255.0" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="77.0" text="Sorsolás" textAlignment="CENTER" />
+            <Label id="resultLabel" fx:id="resultLabel" layoutX="129.0" layoutY="223.0" prefHeight="32.0" prefWidth="145.0" />
+            <HBox layoutX="24.0" layoutY="189.0" spacing="40.0">
+               <children>
+                  
+                  <Label id="label1" fx:id="label1" layoutX="31.0" layoutY="137.0" prefHeight="16.0" prefWidth="39.0" />
+                  <Label id="label2" fx:id="label2" layoutX="88.0" layoutY="137.0" prefHeight="16.0" prefWidth="39.0" />
+                  <Label id="label3" fx:id="label3" layoutX="136.0" layoutY="137.0" prefHeight="16.0" prefWidth="39.0" />
+                  <Label id="label4" fx:id="label4" layoutX="193.0" layoutY="137.0" prefHeight="16.0" prefWidth="39.0" />
+                  <Label id="label5" fx:id="label5" layoutX="238.0" layoutY="137.0" prefHeight="16.0" prefWidth="39.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="29.0" layoutY="90.0" spacing="40.0">
+               <children>
+                  <TextField id="input1" fx:id="input1" layoutX="33.0" layoutY="86.0" prefHeight="25.0" prefWidth="40.0" />
+                  <TextField id="input2" fx:id="input2" layoutX="91.0" layoutY="85.0" prefHeight="25.0" prefWidth="40.0" />
+                  <TextField id="input3" fx:id="input3" layoutX="142.0" layoutY="85.0" prefHeight="25.0" prefWidth="40.0" />
+                  <TextField id="input4" fx:id="input4" layoutX="196.0" layoutY="85.0" prefHeight="25.0" prefWidth="40.0" />
+                  <TextField id="input5" fx:id="input5" layoutX="244.0" layoutY="85.0" prefHeight="25.0" prefWidth="40.0" />
+               </children>
+            </HBox>
+            <Text layoutX="142.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lottó">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Text>
+            <Text layoutX="133.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorsolt számok:" textAlignment="CENTER" wrappingWidth="151.7294921875">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+     <Pane id="alertPane" fx:id="alertPane" layoutX="85.0" layoutY="97.0" prefHeight="300.0" prefWidth="400.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcHeight="49.0" arcWidth="50.0" fill="#94c3ee" height="134.0" layoutX="60.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="280.0" />
+            <Label id="alertText" fx:id="alertText" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="109.0" prefHeight="150.0" prefWidth="200.0" textAlignment="CENTER" textFill="#ae0f0f" wrapText="true" />
+            <Button id="alertButton" fx:id="alertButton" layoutX="170.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleAlertButton" text="OK" />
+         </children></Pane>
+    </children>
+</AnchorPane>
